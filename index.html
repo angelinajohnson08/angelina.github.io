@@ -1,9 +1,101 @@
-<html>
-  <head> 
-  <title>Test Page</title>
-  </head>
-  <body>
-    <p>This is page 1</p>
-    <a href="page2.html">Go to page 2</a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freshly made food and drinks with feel-good ingredients at The Green Table.">
+  <title>The Green Table | Fresh Food, Feel-Good Moments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- GA4: replace G-XXXXXXXXXX with your own Measurement ID after creating a GA4 web stream. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">G</span><span>The Green Table<small>FRESH • LOCAL • GOOD</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="products.html">Menu</a>
+        <a href="about.html">Our Story</a>
+        <a class="nav-cta" href="contact.html">Get in touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow light">GOOD FOOD. GOOD MOOD.</span>
+        <h1>A little greener.<br>A lot more delicious.</h1>
+        <p>Fresh bowls, wholesome bites and refreshing sips made for everyday feel-good moments.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="products.html">Explore our menu</a>
+          <a class="button button-outline-light" href="about.html">Our story</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container intro-grid">
+      <div>
+        <span class="eyebrow">WELCOME TO THE TABLE</span>
+        <h2>Fresh choices, made with care.</h2>
+      </div>
+      <div>
+        <p class="lead">At The Green Table, we believe good food should be colourful, comforting and uncomplicated.</p>
+        <p>From vibrant salads to satisfying sandwiches and fruit-forward drinks, our menu brings together familiar favourites and fresh ingredients. Whether you are grabbing a quick lunch or catching up with friends, there is always something lovely waiting for you.</p>
+        <a class="text-link" href="about.html">Get to know us <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">A FEW FAVOURITES</span><h2>Made to brighten your day</h2></div>
+          <a class="text-link" href="products.html">See the full menu →</a>
+        </div>
+        <div class="product-grid three">
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="Colourful garden salad bowl" loading="lazy">
+            <div class="card-body"><span class="tag">Bestseller</span><h3>Garden Glow Bowl</h3><p>Greens, avocado, cherry tomatoes, cucumber and lemon herb dressing.</p><div class="card-bottom"><strong>₹249</strong><a class="text-link" href="products.html">Explore →</a></div></div>
+          </article>
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85" alt="Freshly prepared sandwich" loading="lazy">
+            <div class="card-body"><span class="tag">Made fresh</span><h3>Avocado Crunch</h3><p>Toasted multigrain bread, smashed avocado, lettuce and house seasoning.</p><div class="card-bottom"><strong>₹199</strong><a class="text-link" href="products.html">Explore →</a></div></div>
+          </article>
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=900&q=85" alt="Fresh fruit smoothie in a glass" loading="lazy">
+            <div class="card-body"><span class="tag">Refreshing</span><h3>Berry Good Smoothie</h3><p>A chilled blend of berries, banana and yoghurt for a fruity pick-me-up.</p><div class="card-bottom"><strong>₹179</strong><a class="text-link" href="products.html">Explore →</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container split-feature">
+      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1100&q=85" alt="A table filled with fresh, colourful food" loading="lazy">
+      <div><span class="eyebrow">THE GREEN TABLE WAY</span><h2>Simple ingredients. Thoughtful food.</h2><p>We keep things fresh, seasonal where possible, and full of flavour. Our menu has options for different appetites, so everyone can find a new favourite.</p><a class="button button-dark" href="contact.html">Plan a visit</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">G</span><span>The Green Table<small>FRESH • LOCAL • GOOD</small></span></a><p>Everyday food, with a little extra goodness.</p></div>
+      <div><h4>Explore</h4><a href="products.html">Our menu</a><a href="about.html">Our story</a><a href="contact.html">Contact</a></div>
+      <div><h4>Say hello</h4><a href="mailto:hello@thegreentable.example">hello@thegreentable.example</a><span>+91 98765 43210</span><div class="social-links"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></div></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span class="current-year"></span> The Green Table. Sample student project.</span><span>Made with care & a little lime.</span></div>
+  </footer>
+</body>
 </html>

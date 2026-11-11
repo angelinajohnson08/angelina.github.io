@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact The Green Table or subscribe to our sample newsletter.">
+  <title>Contact Us | The Green Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- GA4: replace G-XXXXXXXXXX with your own Measurement ID. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="navbar container" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="brand-mark">G</span><span>The Green Table<small>FRESH • LOCAL • GOOD</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="nav-links"><a href="index.html">Home</a><a href="products.html">Menu</a><a href="about.html">Our Story</a><a class="nav-cta active-cta" href="contact.html">Get in touch</a></div>
+  </nav></header>
+  <main id="main">
+    <section class="page-banner contact-banner"><div class="container"><span class="eyebrow light">LET'S TALK</span><h1>We are all ears.</h1><p>Questions, feedback or just a hello? Send us a note.</p></div></section>
+    <section class="section container contact-layout">
+      <div class="contact-info"><span class="eyebrow">GET IN TOUCH</span><h2>Come say hello.</h2><p>Use the sample form or reach out through the contact details below. This is a demonstration website, so form entries are not sent to a business inbox.</p>
+        <div class="contact-detail"><span class="detail-icon">✉</span><div><strong>Email</strong><a href="mailto:hello@thegreentable.example">hello@thegreentable.example</a></div></div>
+        <div class="contact-detail"><span class="detail-icon">☎</span><div><strong>Phone</strong><a href="tel:+919876543210">+91 98765 43210</a></div></div>
+        <div class="contact-detail"><span class="detail-icon">⌖</span><div><strong>Visit</strong><span>Sample address, Indiranagar, Bengaluru, Karnataka</span></div></div>
+        <div class="social-links contact-social"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a></div>
+      </div>
+      <div class="form-panel">
+        <h2>Send us a message</h2><p class="muted">All fields are required for this demo.</p>
+        <form id="contact-form" novalidate>
+          <label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="e.g. Alex Thomas">
+          <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          <label for="subject">Subject</label><input id="subject" name="subject" type="text" required placeholder="What would you like to discuss?">
+          <label for="message">Message</label><textarea id="message" name="message" rows="4" required minlength="10" placeholder="Write your message here..."></textarea>
+          <button class="button button-primary form-submit" type="submit">Submit message</button>
+          <p class="form-feedback" id="contact-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+    <section class="newsletter-section"><div class="container newsletter-layout"><div><span class="eyebrow light">A FRESH NOTE IN YOUR INBOX</span><h2>Join our little newsletter.</h2><p>Get menu updates and feel-good food inspiration.</p></div>
+      <form id="newsletter-form" class="newsletter-form" novalidate><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" required placeholder="Enter your email address"><button class="button button-light" type="submit">Subscribe</button><p id="newsletter-feedback" class="form-feedback light-feedback" role="status" aria-live="polite"></p></form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">G</span><span>The Green Table<small>FRESH • LOCAL • GOOD</small></span></a><p>Everyday food, with a little extra goodness.</p></div><div><h4>Explore</h4><a href="products.html">Our menu</a><a href="about.html">Our story</a><a href="contact.html">Contact</a></div><div><h4>Say hello</h4><a href="mailto:hello@thegreentable.example">hello@thegreentable.example</a><span>+91 98765 43210</span><div class="social-links"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></div></div></div><div class="container footer-bottom"><span>© <span class="current-year"></span> The Green Table. Sample student project.</span><span>Made with care & a little lime.</span></div></footer>
+</body>
+</html>

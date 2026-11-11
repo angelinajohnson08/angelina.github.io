@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore fresh bowls, sandwiches, snacks and drinks at The Green Table.">
+  <title>Our Menu | The Green Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- GA4: replace G-XXXXXXXXXX with your own Measurement ID. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="navbar container" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="brand-mark">G</span><span>The Green Table<small>FRESH • LOCAL • GOOD</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="nav-links"><a href="index.html">Home</a><a class="active" href="products.html">Menu</a><a href="about.html">Our Story</a><a class="nav-cta" href="contact.html">Get in touch</a></div>
+  </nav></header>
+  <main id="main">
+    <section class="page-banner menu-banner"><div class="container"><span class="eyebrow light">FRESH FROM OUR KITCHEN</span><h1>Find your feel-good favourite.</h1><p>Colourful, comforting and made to be enjoyed.</p></div></section>
+    <section class="section container">
+      <div class="section-heading"><div><span class="eyebrow">THE MENU</span><h2>A little something for everyone</h2></div><p class="muted">Sample menu and prices for this student project.</p></div>
+      <div class="filter-bar" role="group" aria-label="Filter menu by category">
+        <button class="filter-button active" data-filter="all" aria-pressed="true">All items</button>
+        <button class="filter-button" data-filter="bowls" aria-pressed="false">Bowls</button>
+        <button class="filter-button" data-filter="mains" aria-pressed="false">Mains</button>
+        <button class="filter-button" data-filter="snacks" aria-pressed="false">Snacks</button>
+        <button class="filter-button" data-filter="drinks" aria-pressed="false">Drinks</button>
+      </div>
+      <div class="product-grid" id="menu-grid">
+        <article class="product-card menu-item" data-category="bowls" data-item-name="Garden Glow Bowl">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="Garden Glow Bowl salad" loading="lazy"><div class="card-body"><span class="tag">Bestseller</span><h3>Garden Glow Bowl</h3><p>Mixed greens, avocado, cherry tomatoes, cucumber and lemon herb dressing.</p><div class="card-bottom"><strong>₹249</strong><button class="text-link product-action" data-item="Garden Glow Bowl">View details →</button></div></div>
+        </article>
+        <article class="product-card menu-item" data-category="bowls" data-item-name="Protein Power Bowl">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=85" alt="Healthy grain and vegetable bowl" loading="lazy"><div class="card-body"><span class="tag">Filling favourite</span><h3>Protein Power Bowl</h3><p>Quinoa, chickpeas, roasted vegetables and a creamy tahini drizzle.</p><div class="card-bottom"><strong>₹289</strong><button class="text-link product-action" data-item="Protein Power Bowl">View details →</button></div></div>
+        </article>
+        <article class="product-card menu-item" data-category="mains" data-item-name="Avocado Crunch">
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85" alt="Avocado and vegetable sandwich" loading="lazy"><div class="card-body"><span class="tag">Made fresh</span><h3>Avocado Crunch</h3><p>Toasted multigrain bread, smashed avocado, lettuce and house seasoning.</p><div class="card-bottom"><strong>₹199</strong><button class="text-link product-action" data-item="Avocado Crunch">View details →</button></div></div>
+        </article>
+        <article class="product-card menu-item" data-category="mains" data-item-name="Pesto Paneer Wrap">
+          <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85" alt="Fresh vegetable wrap cut in half" loading="lazy"><div class="card-body"><span class="tag">House favourite</span><h3>Pesto Paneer Wrap</h3><p>Grilled paneer, crisp vegetables and basil pesto in a soft whole-wheat wrap.</p><div class="card-bottom"><strong>₹229</strong><button class="text-link product-action" data-item="Pesto Paneer Wrap">View details →</button></div></div>
+        </article>
+        <article class="product-card menu-item" data-category="snacks" data-item-name="Herb Potato Wedges">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85" alt="Golden potato wedges" loading="lazy"><div class="card-body"><span class="tag">Perfect to share</span><h3>Herb Potato Wedges</h3><p>Oven-baked potato wedges tossed with herbs and served with a yoghurt dip.</p><div class="card-bottom"><strong>₹149</strong><button class="text-link product-action" data-item="Herb Potato Wedges">View details →</button></div></div>
+        </article>
+        <article class="product-card menu-item" data-category="snacks" data-item-name="Banana Oat Bites">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85" alt="Small homemade snack bites" loading="lazy"><div class="card-body"><span class="tag">Sweet treat</span><h3>Banana Oat Bites</h3><p>Soft-baked banana and oat bites with a hint of cinnamon.</p><div class="card-bottom"><strong>₹119</strong><button class="text-link product-action" data-item="Banana Oat Bites">View details →</button></div></div>
+        </article>
+        <article class="product-card menu-item" data-category="drinks" data-item-name="Berry Good Smoothie">
+          <img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=900&q=85" alt="Berry smoothie in a glass" loading="lazy"><div class="card-body"><span class="tag">Refreshing</span><h3>Berry Good Smoothie</h3><p>A chilled blend of berries, banana and yoghurt.</p><div class="card-bottom"><strong>₹179</strong><button class="text-link product-action" data-item="Berry Good Smoothie">View details →</button></div></div>
+        </article>
+        <article class="product-card menu-item" data-category="drinks" data-item-name="Mint Lime Cooler">
+          <img src="https://images.unsplash.com/photo-1513558161293-cdab765a3fd0?auto=format&fit=crop&w=900&q=85" alt="Refreshing citrus drink with mint" loading="lazy"><div class="card-body"><span class="tag">Cool & citrusy</span><h3>Mint Lime Cooler</h3><p>Fresh lime, mint and sparkling water served over ice.</p><div class="card-bottom"><strong>₹129</strong><button class="text-link product-action" data-item="Mint Lime Cooler">View details →</button></div></div>
+        </article>
+      </div>
+    </section>
+    <section class="cta-strip"><div class="container cta-inner"><div><span class="eyebrow light">HAVE A QUESTION?</span><h2>We would love to hear from you.</h2></div><a class="button button-light" href="contact.html">Contact us</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">G</span><span>The Green Table<small>FRESH • LOCAL • GOOD</small></span></a><p>Everyday food, with a little extra goodness.</p></div><div><h4>Explore</h4><a href="products.html">Our menu</a><a href="about.html">Our story</a><a href="contact.html">Contact</a></div><div><h4>Say hello</h4><a href="mailto:hello@thegreentable.example">hello@thegreentable.example</a><span>+91 98765 43210</span><div class="social-links"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></div></div></div><div class="container footer-bottom"><span>© <span class="current-year"></span> The Green Table. Sample student project.</span><span>Made with care & a little lime.</span></div></footer>
+</body>
+</html>
